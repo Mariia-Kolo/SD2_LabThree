@@ -23,6 +23,12 @@ class ShapeTest {
     @Test
     void testRhombus(){
 
+        Rhombus r = new Rhombus("Rhombus", 6, 8, 5);
+
+        assertEquals(24, r.area(), EPSILON);
+        assertEquals(20, r.perimeter(), EPSILON);
+        assertTrue(r.toString().contains("Side"));
+
     }
 
     @Test
