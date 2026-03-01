@@ -11,6 +11,7 @@ class ShapeTest {
 
     private static final double EPSILON = 1.0;
 
+    //unit test for circle class
     @Test
     void testCircle(){
 
@@ -21,6 +22,7 @@ class ShapeTest {
         assertTrue(c.toString().contains("Radius"));
     }
 
+    //unit test for rhombus class
     @Test
     void testRhombus(){
 
@@ -32,6 +34,7 @@ class ShapeTest {
 
     }
 
+    //unit test for triangle class
     @Test
     void testTriangle(){
 
@@ -43,6 +46,7 @@ class ShapeTest {
 
     }
 
+    //integration test for all sub classes
     @Test
     void integrationTestShapes() {
 
@@ -60,6 +64,7 @@ class ShapeTest {
         shapes.add(new RightAngledTriangle("Triangle", 12, 5));
 
 
+        //calculate expected values
         double[] expectedAreas = {
                 28.27, 50.27,
                 24, 30,
@@ -72,6 +77,7 @@ class ShapeTest {
                 24, 30
         };
 
+        //looping until all shapes area and perimeter are calculated
         for (int i = 0; i < shapes.size(); i++) {
             assertEquals(expectedAreas[i], shapes.get(i).area(), EPSILON);
             assertEquals(expectedPerimeter[i], shapes.get(i).perimeter(), EPSILON);
