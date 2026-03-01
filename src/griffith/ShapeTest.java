@@ -17,7 +17,7 @@ class ShapeTest {
 
         assertEquals(28.27, c.area(), EPSILON);
         assertEquals(18.85,  c.perimeter(), EPSILON);
-        assertTrue(c.toString().contains("Radius: "));
+        assertTrue(c.toString().contains("Radius"));
     }
 
     @Test

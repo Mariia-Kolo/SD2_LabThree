@@ -19,14 +19,14 @@ public class Circle extends Shape {
 
     @Override
     public double area(){
-        return 0;
+        return PI * radius * radius;
     }
     @Override
     public double perimeter(){
-        return 0;
+        return 2 * PI * radius;
     }
     @Override
     public String toString (){
-        return super.toString();
+        return super.toString() + " Radius: " + radius;
     }
 }
