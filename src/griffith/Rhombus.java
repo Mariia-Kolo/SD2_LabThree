@@ -18,17 +18,20 @@ public class Rhombus extends Shape{
 
     @Override
     public double area(){
-        return 0;
+        return (diagonal1*diagonal2)/2;
     }
 
     @Override
     public double perimeter(){
-        return 0;
+        return 4*side;
     }
 
     @Override
     public String toString(){
-        return super.toString();
+        return super.toString()
+                + " Side: " + side
+                + " Diagonal1: " + diagonal1
+                + " Diagonal2: " + diagonal2;
     }
 
 }
