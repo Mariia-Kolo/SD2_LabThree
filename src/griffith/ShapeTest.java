@@ -34,6 +34,12 @@ class ShapeTest {
     @Test
     void testTriangle(){
 
+        RightAngledTriangle t = new RightAngledTriangle("Triangle", 6, 8);
+
+        assertEquals(24, t.area(), EPSILON);
+        assertEquals(24, t.perimeter(), EPSILON);
+        assertTrue(t.toString().contains("Base"));
+
     }
 
 }
